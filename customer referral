@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>50% Off New Contract — Luna Environmental | Vintage Oaks</title>
+<meta name="description" content="Vintage Oaks homeowners: Luna Environmental is offering 50% off your first 6 months of aerobic septic maintenance. Already with another provider? We'll handle the switch — no charges until your current contract expires.">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --green: #0b2820;
+    --green-mid: #1a4035;
+    --orange: #f06a43;
+    --orange-dark: #d95a33;
+    --sand: #e9e6d9;
+    --sand-light: #f5f4ef;
+    --muted: #9db8b2;
+    --text-dark: #1a2e2a;
+    --text-body: #4a5a56;
+  }
+
+  html { font-size: 16px; scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--sand-light);
+    color: var(--text-dark);
+    -webkit-font-smoothing: antialiased;
+  }
+
+
+  .price-box { position: relative; }
+  .save-badge {
+    position: absolute;
+    top: -30px; right: -30px;
+    width: 115px; height: 115px;
+    background: #f06a43;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid #0b2820;
+    z-index: 2;
+  }
+  .save-badge-top { font-size: 15px; color: #fff; font-weight: 700; line-height: 1; letter-spacing: 0.5px; text-transform: uppercase; }
+  .save-badge-amt { font-size: 30px; color: #fff; font-weight: 800; line-height: 1.2; }
+
+
+  .path-selector {
+    background: var(--green);
+    padding: 32px 24px 40px;
+  }
+  .path-selector-inner {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .path-question {
+    color: var(--sand);
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 6px;
+    font-family: Georgia, serif;
+  }
+  .path-sub {
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .path-tiles {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .path-tile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: rgba(255,255,255,0.06);
+    border: 1.5px solid rgba(255,255,255,0.12);
+    border-radius: 14px;
+    padding: 18px 20px;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    text-align: left;
+    width: 100%;
+    font-family: inherit;
+  }
+  .path-tile:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.25);
+  }
+  .path-tile.orange {
+    border-color: rgba(240,106,67,0.4);
+    background: rgba(240,106,67,0.1);
+  }
+  .path-tile.orange:hover {
+    background: rgba(240,106,67,0.18);
+    border-color: rgba(240,106,67,0.6);
+  }
+  .path-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+  .path-tile.orange .path-icon {
+    background: rgba(240,106,67,0.2);
+  }
+  .path-tile-title {
+    color: var(--sand);
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 3px;
+  }
+  .path-tile-desc {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  .path-arrow {
+    margin-left: auto;
+    color: var(--muted);
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+  .path-tile.orange .path-arrow {
+    color: var(--orange);
+  }
+
+  /* ── NEIGHBORHOOD BANNER ── */
+  .neighborhood-bar {
+    background: var(--orange);
+    padding: 12px 24px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .neighborhood-text-main {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--green);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 320px; height: 320px;
+    border-radius: 50%;
+    background: rgba(240,106,67,0.07);
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 48px 24px 40px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .logo-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+
+  .logo-icon { width: 38px; height: 38px; }
+
+  .logo-name {
+    color: var(--sand);
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .eyebrow {
+    display: inline-block;
+    background: rgba(240,106,67,0.18);
+    color: var(--orange);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1px solid rgba(240,106,67,0.3);
+    margin-bottom: 18px;
+  }
+
+  .hero-headline {
+    font-size: clamp(34px, 8vw, 56px);
+    font-weight: 800;
+    color: var(--sand);
+    line-height: 1.05;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+
+  .hero-headline span { color: var(--orange); }
+
+  .hero-sub {
+    color: var(--muted);
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .hero-sub-small {
+    color: rgba(157,184,178,0.7);
+    font-size: 13px;
+    margin-bottom: 36px;
+  }
+
+  /* ── PRICING DISPLAY ── */
+  .pricing-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 16px;
+  }
+
+  .pricing-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .price-box {
+    flex: 1;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    padding: 16px 12px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .price-box.featured {
+    background: rgba(240,106,67,0.15);
+    border-color: rgba(240,106,67,0.3);
+  }
+
+  .price-tier {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+
+  .price-box.featured .price-tier {
+    color: var(--orange);
+  }
+
+  .price-was {
+    font-size: 22px;
+    font-weight: 700;
+    color: rgba(233,230,217,0.5);
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  .price-was-x {
+    color: #e53e3e;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1;
+  }
+  .price-was-num {
+    text-decoration: line-through;
+    text-decoration-color: #e53e3e;
+    text-decoration-thickness: 2px;
+  }
+
+  .price-now {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--sand);
+    line-height: 1;
+  }
+
+  .price-box.featured .price-now {
+    color: var(--orange);
+  }
+
+  .price-period {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+
+  .price-desc {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 6px;
+    line-height: 1.4;
+  }
+
+  .pricing-footnote {
+    font-size: 12px;
+    color: rgba(157,184,178,0.7);
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  /* ── CTA ── */
+  .cta-wrap { max-width: 640px; margin: 0 auto; padding: 0 24px 40px; }
+
+  .cta-btn {
+    display: block;
+    width: 100%;
+    background: var(--orange);
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    padding: 20px 24px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.15s, transform 0.1s;
+    margin-bottom: 12px;
+    font-family: inherit;
+    letter-spacing: 0.2px;
+  }
+
+  .cta-btn:hover { background: var(--orange-dark); }
+  .cta-btn:active { transform: scale(0.98); }
+  .cta-note { color: rgba(233,230,217,0.5); font-size: 12px; text-align: center; }
+
+  /* ── SWITCHER SECTION ── */
+  .switcher-section {
+    background: var(--orange);
+    padding: 40px 24px;
+  }
+
+  .switcher-inner {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .switcher-tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+  }
+
+  .switcher-title {
+    font-size: clamp(20px, 5vw, 28px);
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    font-family: Georgia, serif;
+  }
+
+  .switcher-body {
+    color: rgba(255,255,255,0.85);
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 24px;
+  }
+
+  .switcher-body strong { color: #fff; }
+
+  .switcher-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .switcher-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 12px;
+    padding: 16px;
+  }
+
+  .step-num {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #fff;
+    color: var(--orange);
+    font-size: 13px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .step-text { color: #fff; font-size: 14px; line-height: 1.5; }
+  .step-text strong { display: block; margin-bottom: 2px; font-size: 14px; }
+
+  .switcher-cta {
+    display: block;
+    width: 100%;
+    background: #fff;
+    color: var(--orange);
+    border: none;
+    border-radius: 14px;
+    padding: 18px 24px;
+    font-size: 17px;
+    font-weight: 800;
+    cursor: pointer;
+    font-family: inherit;
+    transition: opacity 0.15s, transform 0.1s;
+  }
+
+  .switcher-cta:hover { opacity: 0.92; }
+  .switcher-cta:active { transform: scale(0.98); }
+
+  /* ── WHY SECTION ── */
+  .why-section {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 48px 24px;
+  }
+
+  .photo-block {
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 32px;
+    position: relative;
+    background: var(--green-mid);
+  }
+
+  .photo-block img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: center 30%;
+    display: block;
+  }
+
+  .photo-placeholder {
+    width: 100%;
+    height: 240px;
+    background: linear-gradient(135deg, #1a4035 0%, #0b2820 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(233,230,217,0.5);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .photo-caption {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: linear-gradient(to top, rgba(11,40,32,0.95), transparent);
+    padding: 32px 20px 18px;
+    color: var(--sand);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  .section-tag {
+    display: inline-block;
+    background: rgba(240,106,67,0.12);
+    color: var(--orange-dark);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 20px;
+    border: 1px solid rgba(240,106,67,0.25);
+    margin-bottom: 14px;
+  }
+
+  .section-title {
+    font-size: clamp(20px, 5vw, 28px);
+    font-weight: 700;
+    color: var(--green);
+    line-height: 1.25;
+    margin-bottom: 16px;
+    font-family: Georgia, serif;
+  }
+
+  .section-body {
+    font-size: 15px;
+    color: var(--text-body);
+    line-height: 1.75;
+    margin-bottom: 24px;
+  }
+
+  .section-body strong { color: var(--green); font-weight: 600; }
+
+  .benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+
+  .benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    background: var(--sand);
+    border-radius: 10px;
+    font-size: 14px;
+    color: var(--text-dark);
+    font-weight: 500;
+  }
+
+  .benefit-icon {
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 24px;
+    color: #0b2820;
+  }
+
+  /* ── HOW IT WORKS ── */
+  .how-section {
+    background: var(--green);
+    padding: 48px 24px;
+  }
+
+  .how-inner { max-width: 640px; margin: 0 auto; }
+
+  .how-title {
+    font-size: clamp(20px, 4vw, 26px);
+    font-weight: 700;
+    color: var(--sand);
+    margin-bottom: 28px;
+    font-family: Georgia, serif;
+    text-align: center;
+  }
+
+  .steps { display: flex; flex-direction: column; gap: 0; }
+
+  .step {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 28px;
+    position: relative;
+  }
+
+  .step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 17px; top: 38px; bottom: 0;
+    width: 2px;
+    background: rgba(255,255,255,0.1);
+  }
+
+  .how-step-num {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: var(--orange);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .step-title { color: var(--sand); font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+  .step-desc { color: var(--muted); font-size: 13px; line-height: 1.5; }
+
+  /* ── BOTTOM CTA ── */
+  .bottom-cta {
+    background: var(--green);
+    padding: 0 24px 48px;
+  }
+
+  .bottom-cta-inner {
+    max-width: 640px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 36px;
+    text-align: center;
+  }
+
+  .bottom-price-label { color: var(--muted); font-size: 13px; margin-bottom: 4px; }
+  .bottom-price-big { color: var(--orange); font-size: 52px; font-weight: 800; line-height: 1; }
+  .bottom-price-sub { color: var(--muted); font-size: 13px; margin-bottom: 6px; }
+  .bottom-price-note { color: rgba(157,184,178,0.5); font-size: 12px; text-decoration: line-through; margin-bottom: 20px; }
+
+  .bottom-neighborhood {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(240,106,67,0.14);
+    border: 1px solid rgba(240,106,67,0.3);
+    border-radius: 20px;
+    padding: 8px 16px;
+    margin-bottom: 24px;
+  }
+  .bottom-neighborhood-text {
+    color: var(--orange);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+  }
+
+  .footer-trust {
+    color: rgba(233,230,217,0.35);
+    font-size: 11px;
+    margin-top: 16px;
+    line-height: 1.7;
+  }
+
+  .footer-trust a { color: var(--muted); text-decoration: none; }
+
+  /* ── MODAL ── */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+    z-index: 9999;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .modal-overlay.open { display: flex; }
+
+  .modal {
+    background: #fff;
+    border-radius: 24px 24px 0 0;
+    padding: 28px 24px 48px;
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+    animation: slideUp 0.3s cubic-bezier(0.4,0,0.2,1);
+    max-height: 92vh;
+    overflow-y: auto;
+  }
+
+  @keyframes slideUp {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  .modal-handle {
+    width: 44px; height: 5px;
+    background: #e0e0e0;
+    border-radius: 3px;
+    margin: 0 auto 24px;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 20px; right: 20px;
+    background: #f5f5f5;
+    border: none;
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #888;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+  }
+
+  .modal-title { font-size: 22px; font-weight: 700; color: var(--green); margin-bottom: 6px; font-family: Georgia, serif; }
+  .modal-sub { font-size: 13px; color: #888; margin-bottom: 8px; line-height: 1.5; }
+
+  /* toggle */
+  .contract-toggle {
+    display: flex;
+    background: #f0f0f0;
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: 20px;
+    gap: 4px;
+  }
+
+  .toggle-btn {
+    flex: 1;
+    padding: 9px 8px;
+    border: none;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    background: transparent;
+    color: #888;
+    transition: all 0.2s;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .toggle-btn.active {
+    background: var(--green);
+    color: #fff;
+  }
+
+  .tier-select {
+    margin-bottom: 16px;
+  }
+
+  .tier-select label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #666;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+  }
+
+  .tier-options {
+    display: flex;
+    gap: 8px;
+  }
+
+  .tier-opt {
+    flex: 1;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    text-align: center;
+  }
+
+  .tier-opt.selected {
+    border-color: var(--green);
+    background: #eef7f4;
+  }
+
+  .tier-opt-name { font-size: 13px; font-weight: 700; color: var(--green); }
+  .tier-opt-price { font-size: 20px; font-weight: 800; color: var(--orange); margin: 2px 0; }
+  .tier-opt-was { font-size: 11px; color: #aaa; text-decoration: line-through; }
+  .tier-opt-desc { font-size: 11px; color: #888; margin-top: 4px; line-height: 1.3; }
+
+  .switcher-note {
+    display: none;
+    background: #fff8f0;
+    border: 1px solid rgba(240,106,67,0.3);
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 13px;
+    color: var(--text-body);
+    margin-bottom: 16px;
+    line-height: 1.5;
+  }
+
+  .switcher-note strong { color: var(--orange-dark); }
+
+  .form-field { margin-bottom: 14px; }
+
+  .form-field label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #666;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+  }
+
+  .form-field input, .form-field select {
+    display: block;
+    width: 100%;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 13px 16px;
+    font-size: 15px;
+    font-family: inherit;
+    color: #222;
+    outline: none;
+    transition: border-color 0.2s;
+    background: #fff;
+    appearance: none;
+  }
+
+  .form-field input:focus, .form-field select:focus { border-color: var(--green); }
+  .form-field input::placeholder { color: #bbb; }
+
+  .submit-btn {
+    display: block;
+    width: 100%;
+    background: var(--orange);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 17px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 8px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.15s, transform 0.1s;
+  }
+
+  .submit-btn:hover { background: var(--orange-dark); }
+  .submit-btn:active { transform: scale(0.98); }
+
+  .form-disclaimer {
+    font-size: 11px;
+    color: #aaa;
+    text-align: center;
+    margin-top: 12px;
+    line-height: 1.5;
+  }
+
+  /* success */
+  .success-view {
+    display: none;
+    text-align: center;
+    padding: 12px 0 8px;
+  }
+
+  .success-icon {
+    width: 64px; height: 64px;
+    background: #eef7f4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+  }
+
+  .success-title { font-size: 22px; font-weight: 700; color: var(--green); margin-bottom: 10px; font-family: Georgia, serif; }
+  .success-body { font-size: 14px; color: #666; line-height: 1.7; margin-bottom: 24px; }
+  .success-close {
+    display: inline-block;
+    background: var(--green);
+    color: var(--sand);
+    border: none;
+    border-radius: 10px;
+    padding: 12px 28px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  @media (min-width: 640px) {
+    .modal { border-radius: 20px; margin: auto; max-height: 90vh; }
+    .modal-overlay { align-items: center; }
+  }
+
+  @media (max-width: 480px) {
+    .pricing-row { flex-direction: column; gap: 40px; }
+    .save-badge { width: 100px !important; height: 100px !important; top: -28px !important; right: -28px !important; left: auto !important; }
+    .save-badge.left { left: -28px !important; right: auto !important; }
+    .save-badge-top { font-size: 13px; }
+    .save-badge-amt { font-size: 28px; }
+    .neighborhood-bar { gap: 8px; padding: 10px 14px; }
+    .neighborhood-text-main { font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="neighborhood-bar">
+  <span class="neighborhood-text-main">Exclusive Offer for Vintage Oaks Homeowners</span>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+
+    <div class="logo-row">
+      <svg class="logo-icon" viewBox="0 0 38 38" fill="none">
+        <path d="M19 4 C19 4, 32 11, 32 21 C32 30, 26 34, 19 34 C12 34, 6 30, 6 21 C6 11, 19 4, 19 4Z" fill="#f06a43" opacity="0.85"/>
+        <path d="M19 34 L19 13" stroke="#0b2820" stroke-width="2" stroke-linecap="round"/>
+        <path d="M19 22 Q26 18, 30 13" stroke="#0b2820" stroke-width="1.3" stroke-linecap="round" opacity="0.5"/>
+        <path d="M19 27 Q12 23, 8 18" stroke="#0b2820" stroke-width="1.3" stroke-linecap="round" opacity="0.5"/>
+      </svg>
+      <span class="logo-name">Luna Environmental</span>
+    </div>
+
+    <h1 class="hero-headline">50% Off<br>Your First<br><span>6 Months</span></h1>
+    <p class="hero-sub">Aerobic septic maintenance contracts — a special offer for Vintage Oaks neighbors</p>
+    <p class="hero-sub-small">Already with another provider? We'll handle the switch. No charges until your current contract expires.</p>
+
+    <!-- PRICING -->
+    <div class="pricing-card">
+      <div class="pricing-row">
+        <div class="price-box">
+          <div class="save-badge left" style="left:-30px;right:auto;top:-30px;"><span class="save-badge-top">save</span><span class="save-badge-amt">$90</span></div>
+          <p class="price-tier">Basic</p>
+          <p class="price-was"><span class="price-was-num">$30/mo</span></p>
+          <p class="price-now">$15</p>
+          <p class="price-period">per month · first 6 months</p>
+          <p class="price-desc">For standard aerobic septic systems</p>
+          <p style="margin-top:10px;font-size:13px;font-weight:700;color:#9db8b2;">Save <span style="color:#f06a43;">$90</span> over 6 months</p>
+        </div>
+        <div class="price-box featured">
+          <div class="save-badge"><span class="save-badge-top">save</span><span class="save-badge-amt">$150</span></div>
+          <p class="price-tier">Advanced</p>
+          <p class="price-was"><span class="price-was-num">$50/mo</span></p>
+          <p class="price-now">$25</p>
+          <p class="price-period">per month · first 6 months</p>
+          <p class="price-desc">For advanced aerobic septic systems</p>
+          <p style="margin-top:10px;font-size:13px;font-weight:700;color:#9db8b2;">Save <span style="color:#f06a43;">$150</span> over 6 months</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-wrap" style="padding:0 0 28px;">
+      <button class="cta-btn" onclick="openModal('new')">Claim My 50% Off Rate</button>
+      <p class="cta-note">No commitment. We'll call to confirm within 1 business day.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- GOOGLE REVIEWS -->
+<section style="background:#0b2820; padding: 0 24px 48px;">
+  <div style="max-width:640px; margin:0 auto;">
+    <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 36px; text-align:center; margin-bottom: 24px;">
+      <p style="display:inline-block; background:rgba(240,106,67,0.18); color:#f06a43; font-size:11px; font-weight:700; letter-spacing:2px; text-transform:uppercase; padding:6px 16px; border-radius:20px; border:1px solid rgba(240,106,67,0.3); margin-bottom:14px;">What your neighbors say about us</p>
+    </div>
+    <div style="background:#fff; border-radius:16px; padding:24px 16px; overflow:hidden;">
+      <script src="https://elfsightcdn.com/platform.js" async></script>
+      <div class="elfsight-app-c8b4c0af-3fda-4df4-9748-91285aad9750" data-elfsight-app-lazy></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SWITCHER SECTION -->
+<section class="switcher-section" id="section-switch">
+  <div class="switcher-inner">
+    <p class="switcher-tag">Already on a contract?</p>
+    <h2 class="switcher-title">Locked into another contract? Good news.</h2>
+    <p class="switcher-body">
+      Most homeowners are already locked into a contract with another provider. That shouldn't stop you from getting a better deal. <strong>Sign with Luna, lock in your 50% off rate, and we'll take care of everything else.</strong>
+    </p>
+
+    <div class="switcher-steps">
+      <div class="switcher-step">
+        <div class="step-num">1</div>
+        <p class="step-text"><strong>Sign up today</strong>Lock in your 50% off rate — we put a card on file but charge you nothing.</p>
+      </div>
+      <div class="switcher-step">
+        <div class="step-num">2</div>
+        <p class="step-text"><strong>We contact your current provider</strong>We handle the cancellation notice so you don't have to deal with them.</p>
+      </div>
+      <div class="switcher-step">
+        <div class="step-num">3</div>
+        <p class="step-text"><strong>We switch you automatically</strong>On your contract expiration date, Luna takes over. Your 50% off period starts then.</p>
+      </div>
+      <div class="switcher-step">
+        <div class="step-num">4</div>
+        <p class="step-text"><strong>Immediately get Luna benefits</strong>From the day you sign, you get discounted service calls and 10% off all parts — even before we officially take over.</p>
+      </div>
+    </div>
+
+    <button class="switcher-cta" onclick="openModal('switch')">I'm Already on a Contract — Switch Me</button>
+  </div>
+</section>
+
+<!-- WHY LUNA -->
+<section class="why-section" id="section-new">
+
+  <div class="photo-block">
+    <!-- Replace the placeholder below with your <img src="..." alt="..." /> tag when you have the image ready -->
+    <div class="photo-placeholder">Photo placeholder — drop image here</div>
+    <div class="photo-caption">Luna Environmental · TCEQ Licensed Technicians</div>
+  </div>
+
+  <p class="section-tag">Why Luna</p>
+  <h2 class="section-title">6,000+ Central Texas homeowners trust their system to us</h2>
+  <p class="section-body">
+    Your aerobic septic system isn't optional maintenance — it's a state requirement and a significant home investment. The wrong provider misses inspections, skips reporting, and leaves you exposed to fines and system failure.
+    <br><br>
+    <strong>Luna Environmental has been the most trusted aerobic septic maintenance provider in Central Texas</strong> — licensed, insured, and built specifically for the Hill Country and surrounding areas where aerobic systems are the standard.
+  </p>
+
+  <div class="benefits-list">
+    <div class="benefit-item">
+      <div class="benefit-icon" style="background:transparent;width:32px;height:32px;font-size:26px;color:#0b2820;font-weight:700;">✓</div>
+      3 system inspections per year & state reporting
+    </div>
+    <div class="benefit-item">
+      <div class="benefit-icon" style="background:transparent;width:32px;height:32px;font-size:26px;color:#0b2820;font-weight:700;">✓</div>
+      Discounted service calls — contracted customers only
+    </div>
+    <div class="benefit-item">
+      <div class="benefit-icon" style="background:transparent;width:32px;height:32px;font-size:26px;color:#0b2820;font-weight:700;">✓</div>
+      10% off all parts replacements
+    </div>
+    <div class="benefit-item">
+      <div class="benefit-icon" style="background:transparent;width:32px;height:32px;font-size:26px;color:#0b2820;font-weight:700;">✓</div>
+      TCEQ licensed & fully insured technicians
+    </div>
+    <div class="benefit-item">
+      <div class="benefit-icon" style="background:transparent;width:32px;height:32px;font-size:26px;color:#0b2820;font-weight:700;">✓</div>
+      Trusted by 6,000+ Central Texas homeowners
+    </div>
+  </div>
+
+  <button class="cta-btn" style="background:var(--green);" onclick="openModal('new')">Claim My 50% Off Rate →</button>
+
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-section">
+  <div class="how-inner">
+    <h2 class="how-title">What happens after you sign up</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="how-step-num">1</div>
+        <div>
+          <p class="step-title">Claim your rate</p>
+          <p class="step-desc">Fill out the form, turn your phone ringer on. We contact you.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="how-step-num">2</div>
+        <div>
+          <p class="step-title">We call to confirm</p>
+          <p class="step-desc">A Luna team member calls within 1 business day to verify your address and system details.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="how-step-num">3</div>
+        <div>
+          <p class="step-title">Card on file, service begins</p>
+          <p class="step-desc">We put your card on file at your 50% off rate. Service starts immediately for new customers — or on your current contract's expiration date if switching.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="how-step-num">4</div>
+        <div>
+          <p class="step-title">After 6 months, standard rate</p>
+          <p class="step-desc">Your rate adjusts to the standard contract price. No surprises.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOTTOM CTA -->
+<section class="bottom-cta">
+  <div class="bottom-cta-inner">
+    <p class="bottom-price-label">Your rate for the first 6 months</p>
+    <p class="bottom-price-big">$15–$25</p>
+    <p class="bottom-price-sub">per month depending on contract tier</p>
+    <p class="bottom-price-note">Regular price $30–$50/month</p>
+
+    <div class="bottom-neighborhood">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+        <path d="M7 1L8.85 4.75L13 5.35L10 8.27L10.71 12.4L7 10.45L3.29 12.4L4 8.27L1 5.35L5.15 4.75L7 1Z" stroke="#f06a43" stroke-width="1.5" stroke-linejoin="round"/>
+      </svg>
+      <span class="bottom-neighborhood-text">Exclusive Rate for Vintage Oaks</span>
+    </div>
+
+    <button class="cta-btn" onclick="openModal('new')">Claim My 50% Off Rate</button>
+    <p class="footer-trust">
+      Luna Environmental · Central Texas<br>
+      Fully Insured · Aerobic Septic Specialists<br>
+      <a href="tel:8303128776">Questions? Call us: (830) 312-8776</a>
+    </p>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal-overlay" onclick="handleOverlayClick(event)">
+  <div class="modal" id="modal">
+    <div class="modal-handle"></div>
+    <button class="modal-close" onclick="closeModal()">×</button>
+
+    <div id="form-view">
+      <h2 class="modal-title">Claim Your 50% Off Rate</h2>
+      <p class="modal-sub">Select your situation below — no payment due today.</p>
+
+      <!-- Toggle -->
+      <div class="contract-toggle">
+        <button class="toggle-btn active" id="toggle-new" onclick="setMode('new')">I don't have a contract</button>
+        <button class="toggle-btn" id="toggle-switch" onclick="setMode('switch')">I'm with another provider</button>
+      </div>
+
+      <!-- Switcher note -->
+      <div class="switcher-note" id="switcher-note">
+        <strong>No charges until your current contract expires.</strong> We'll contact your provider and handle the switch automatically on your expiration date. You get Luna benefits immediately.
+      </div>
+
+
+
+      <div class="form-field">
+        <label>Full Name *</label>
+        <input type="text" id="f-name" placeholder="Jane Smith" autocomplete="name"/>
+      </div>
+      <div class="form-field">
+        <label>Phone Number *</label>
+        <input type="tel" id="f-phone" placeholder="(512) 555-0100" autocomplete="tel"/>
+      </div>
+      <div class="form-field">
+        <label>Email Address</label>
+        <input type="email" id="f-email" placeholder="jane@email.com" autocomplete="email"/>
+      </div>
+      <div class="form-field">
+        <label>Property Address *</label>
+        <input type="text" id="f-address" placeholder="123 Oak Hollow Dr, Cedar Park TX" autocomplete="street-address"/>
+      </div>
+      <div class="form-field" id="expiry-field" style="display:none;">
+        <label>Current Contract Expiration (approx.)</label>
+        <input type="text" id="f-expiry" placeholder="e.g. August 2026"/>
+      </div>
+
+      <button class="submit-btn" id="submit-btn" onclick="submitForm()">Reserve My Spot →</button>
+      <p class="form-disclaimer">By submitting you agree to be contacted by Luna Environmental. No spam, ever.</p>
+    </div>
+
+    <div class="success-view" id="success-view">
+      <div class="success-icon">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+          <path d="M6 15L12 21L24 9" stroke="#0b2820" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h2 class="success-title">You're locked in!</h2>
+      <p class="success-body" id="success-body">We'll call within 1 business day to confirm your details and get your card on file at your 50% off rate.</p>
+      <button class="success-close" onclick="closeModal()">Done</button>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  var GHL_WEBHOOK_URL = 'https://hooks.zapier.com/hooks/catch/27073484/4o4cg1j/';
+  var currentMode = 'new';
+
+  function setMode(mode) {
+    currentMode = mode;
+    document.getElementById('toggle-new').classList.toggle('active', mode === 'new');
+    document.getElementById('toggle-switch').classList.toggle('active', mode === 'switch');
+    document.getElementById('switcher-note').style.display = mode === 'switch' ? 'block' : 'none';
+    document.getElementById('expiry-field').style.display = mode === 'switch' ? 'block' : 'none';
+    document.getElementById('submit-btn').textContent = mode === 'switch'
+      ? 'Switch Me to Luna →'
+      : 'Reserve My Spot →';
+  }
+
+  function openModal(mode) {
+    mode = mode || 'new';
+    setMode(mode);
+    document.getElementById('modal-overlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+    setTimeout(function() { document.getElementById('f-name').focus(); }, 350);
+  }
+
+  function closeModal() {
+    document.getElementById('modal-overlay').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function handleOverlayClick(e) {
+    if (e.target === document.getElementById('modal-overlay')) closeModal();
+  }
+
+  function submitForm() {
+    var name    = document.getElementById('f-name').value.trim();
+    var phone   = document.getElementById('f-phone').value.trim();
+    var email   = document.getElementById('f-email').value.trim();
+    var address = document.getElementById('f-address').value.trim();
+    var expiry  = document.getElementById('f-expiry').value.trim();
+
+    if (!name) { alert('Please enter your name.'); return; }
+    if (!phone) { alert('Please enter your phone number.'); return; }
+    if (!address) { alert('Please enter your property address.'); return; }
+
+    var btn = document.getElementById('submit-btn');
+    btn.textContent = 'Submitting...';
+    btn.style.opacity = '0.7';
+    btn.style.pointerEvents = 'none';
+
+    var payload = {
+      full_name: name,
+      phone: phone,
+      email: email,
+      address: address,
+      contract_tier: 'To be assigned based on system type',
+      customer_type: currentMode === 'switch' ? 'Switcher' : 'New Customer',
+      current_contract_expiry: expiry || 'N/A',
+      offer: '50% Off First 6 Months',
+      source: 'Landing Page - Vintage Oaks',
+      neighborhood: 'Vintage Oaks',
+      page_url: window.location.href
+    };
+
+    var urlParams = new URLSearchParams(window.location.search);
+    urlParams.forEach(function(value, key) {
+      payload[key] = value;
+    });
+
+    if (GHL_WEBHOOK_URL && GHL_WEBHOOK_URL !== 'YOUR_GHL_WEBHOOK_URL_HERE') {
+      var formData = new FormData();
+      Object.keys(payload).forEach(function(key) {
+        formData.append(key, payload[key]);
+      });
+      fetch(GHL_WEBHOOK_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: formData
+      })
+      .then(function() { showSuccess(); })
+      .catch(function() { showSuccess(); });
+    } else {
+      setTimeout(showSuccess, 600);
+    }
+  }
+
+  function showSuccess() {
+    var msg = currentMode === 'switch'
+      ? "We'll call within 1 business day to confirm your details and lock in your rate. We'll handle reaching out to your current provider — you don't have to do a thing."
+      : "We'll call within 1 business day to confirm your details and get your card on file at your 50% off rate. Service starts as soon as you're confirmed.";
+    document.getElementById('success-body').textContent = msg;
+    document.getElementById('form-view').style.display = 'none';
+    document.getElementById('success-view').style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
